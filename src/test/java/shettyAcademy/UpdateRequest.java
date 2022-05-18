@@ -2,11 +2,9 @@ package shettyAcademy;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import com.CTS.StripeRestAssuredAPI.PayloadToCreatePostRequest;
 import com.CTS.StripeRestAssuredAPI.UpdatePayload;
 import com.aventstack.extentreports.Status;
-
 import extendedReport.ExtentListeners;
 import io.restassured.response.Response;
 import junit.framework.Assert;

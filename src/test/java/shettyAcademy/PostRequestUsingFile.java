@@ -4,7 +4,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.CTS.StripeRestAssuredAPI.PayloadToCreatePostRequestWithFile;
 import com.aventstack.extentreports.Status;
-
 import extendedReport.ExtentListeners;
 import io.restassured.response.Response;
 import utilityClass.HelperClass;

@@ -9,8 +9,6 @@ public class CreatePlaceIdAPIUsingPostRequest {
 	
 	public static Object postRequest() throws Exception {
 		
-//		RestAssured.baseURI = HelperClass.readDataFromPropertyFile().getBaseURL();
-		
 		Response response=JsonPostRequest.createPostRequest(HelperClass.readDataFromPropertyFile().getKey(), 
 				HelperClass.readDataFromPropertyFile().getContentType(), PayloadToCreatePostRequest.postRequest(), 
 				HelperClass.readDataFromPropertyFile().getBaseURL(),

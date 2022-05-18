@@ -3,11 +3,9 @@ package shettyAcademy;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import com.CTS.StripeRestAssuredAPI.DeletePayload;
 import com.CTS.StripeRestAssuredAPI.PayloadToCreatePostRequest;
 import com.aventstack.extentreports.Status;
-
 import extendedReport.ExtentListeners;
 import io.restassured.response.Response;
 import utilityClass.HelperClass;
