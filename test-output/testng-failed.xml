@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="shettyAcademy.CreatePlaceIdAPIUsingPostRequest">
+      <class name="shettyAcademy.PostRequestUsingFile">
         <methods>
-          <include name="postRequest"/>
+          <include name="postRequestUsingFile"/>
         </methods>
-      </class> <!-- shettyAcademy.CreatePlaceIdAPIUsingPostRequest -->
+      </class> <!-- shettyAcademy.PostRequestUsingFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

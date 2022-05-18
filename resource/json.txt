@@ -1,0 +1,16 @@
+{
+    "location": {
+        "lat": -178.383494,
+        "lng": -216.572638
+    },
+    "accuracy": 73,
+    "name": "Parker",
+    "phone_number": "(+1) 091 8003201",
+    "address": "678 East WT Harris Road",
+    "types": [
+        "Walgreens",
+        "Drugs"
+    ],
+    "website": "http://rahulshettyacademy.com",
+    "language": "Virgina-IN"
+}
