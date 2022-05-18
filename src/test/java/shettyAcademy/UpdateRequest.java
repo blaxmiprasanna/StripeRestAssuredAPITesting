@@ -1,5 +1,6 @@
 package shettyAcademy;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.CTS.StripeRestAssuredAPI.PayloadToCreatePostRequest;
@@ -13,6 +14,8 @@ import utilityClass.HelperClass;
 import utilityClass.JSONGetRequest;
 import utilityClass.JsonPostRequest;
 import utilityClass.JsonUpdateRequest;
+
+@Listeners(extendedReport.ExtentListeners.class)
 
 public class UpdateRequest extends ExtentListeners{
 

@@ -1,6 +1,7 @@
 package shettyAcademy;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.CTS.StripeRestAssuredAPI.DeletePayload;
@@ -13,6 +14,8 @@ import utilityClass.HelperClass;
 import utilityClass.JSONGetRequest;
 import utilityClass.JsonDeleteRequest;
 import utilityClass.JsonPostRequest;
+
+@Listeners(extendedReport.ExtentListeners.class)
 
 public class DeleteRequest extends ExtentListeners{
 	

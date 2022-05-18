@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9115" started-at="2022-05-18T15:30:44Z" finished-at="2022-05-18T15:30:53Z">
+  <suite name="Default suite" duration-ms="19365" started-at="2022-05-18T20:09:06Z" finished-at="2022-05-18T20:09:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9115" started-at="2022-05-18T15:30:44Z" finished-at="2022-05-18T15:30:53Z">
-      <class name="com.CTS.StripeRestAssuredAPI.CreatePlaceId">
-        <test-method status="PASS" signature="createPlaceId()[pri:0, instance:com.CTS.StripeRestAssuredAPI.CreatePlaceId@517cd4b]" name="createPlaceId" duration-ms="1" started-at="2022-05-18T11:30:49Z" finished-at="2022-05-18T11:30:49Z">
+    <test name="Default test" duration-ms="19365" started-at="2022-05-18T20:09:06Z" finished-at="2022-05-18T20:09:26Z">
+      <class name="shettyAcademy.GetRequest">
+        <test-method status="PASS" signature="postRequestUsingFile()[pri:0, instance:shettyAcademy.GetRequest@32cf48b7]" name="postRequestUsingFile" duration-ms="1151" started-at="2022-05-18T16:09:16Z" finished-at="2022-05-18T16:09:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createPlaceId -->
-      </class> <!-- com.CTS.StripeRestAssuredAPI.CreatePlaceId -->
-      <class name="shettyAcademy.GetRequest">
-        <test-method status="PASS" signature="getRequest()[pri:0, instance:shettyAcademy.GetRequest@1ee807c6]" name="getRequest" duration-ms="2396" started-at="2022-05-18T11:30:49Z" finished-at="2022-05-18T11:30:52Z">
+        </test-method> <!-- postRequestUsingFile -->
+        <test-method status="PASS" signature="getRequest()[pri:0, instance:shettyAcademy.GetRequest@32cf48b7]" name="getRequest" duration-ms="2471" started-at="2022-05-18T16:09:17Z" finished-at="2022-05-18T16:09:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRequest -->
       </class> <!-- shettyAcademy.GetRequest -->
+      <class name="com.CTS.StripeRestAssuredAPI.CreatePlaceId">
+        <test-method status="PASS" signature="createPlaceId()[pri:0, instance:com.CTS.StripeRestAssuredAPI.CreatePlaceId@5cdd8682]" name="createPlaceId" duration-ms="1" started-at="2022-05-18T16:09:16Z" finished-at="2022-05-18T16:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlaceId -->
+      </class> <!-- com.CTS.StripeRestAssuredAPI.CreatePlaceId -->
       <class name="shettyAcademy.PostRequestUsingFile">
-        <test-method status="PASS" signature="postRequestUsingFile()[pri:0, instance:shettyAcademy.PostRequestUsingFile@58a90037]" name="postRequestUsingFile" duration-ms="1189" started-at="2022-05-18T11:30:52Z" finished-at="2022-05-18T11:30:53Z">
+        <test-method status="PASS" signature="postRequestUsingFile()[pri:0, instance:shettyAcademy.PostRequestUsingFile@517cd4b]" name="postRequestUsingFile" duration-ms="1143" started-at="2022-05-18T16:09:24Z" finished-at="2022-05-18T16:09:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postRequestUsingFile -->
       </class> <!-- shettyAcademy.PostRequestUsingFile -->
+      <class name="extendedReport.ExtentListeners">
+        <test-method status="PASS" signature="postRequestUsingFile()[pri:0, instance:extendedReport.ExtentListeners@130f889]" name="postRequestUsingFile" duration-ms="1176" started-at="2022-05-18T16:09:15Z" finished-at="2022-05-18T16:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequestUsingFile -->
+      </class> <!-- extendedReport.ExtentListeners -->
       <class name="shettyAcademy.UpdateRequest">
-        <test-method status="PASS" signature="updateRequest()[pri:0, instance:shettyAcademy.UpdateRequest@1efee8e7]" name="updateRequest" duration-ms="4299" started-at="2022-05-18T11:30:44Z" finished-at="2022-05-18T11:30:48Z">
+        <test-method status="PASS" signature="postRequestUsingFile()[pri:0, instance:shettyAcademy.UpdateRequest@6cc7b4de]" name="postRequestUsingFile" duration-ms="3997" started-at="2022-05-18T16:09:06Z" finished-at="2022-05-18T16:09:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequestUsingFile -->
+        <test-method status="PASS" signature="updateRequest()[pri:0, instance:shettyAcademy.UpdateRequest@6cc7b4de]" name="updateRequest" duration-ms="4609" started-at="2022-05-18T16:09:10Z" finished-at="2022-05-18T16:09:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateRequest -->
       </class> <!-- shettyAcademy.UpdateRequest -->
       <class name="shettyAcademy.DeleteRequest">
-        <test-method status="PASS" signature="deleteRequest()[pri:0, instance:shettyAcademy.DeleteRequest@76a4d6c]" name="deleteRequest" duration-ms="1214" started-at="2022-05-18T11:30:48Z" finished-at="2022-05-18T11:30:49Z">
+        <test-method status="PASS" signature="deleteRequest()[pri:0, instance:shettyAcademy.DeleteRequest@679b62af]" name="deleteRequest" duration-ms="3659" started-at="2022-05-18T16:09:20Z" finished-at="2022-05-18T16:09:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteRequest -->
+        <test-method status="PASS" signature="postRequestUsingFile()[pri:0, instance:shettyAcademy.DeleteRequest@679b62af]" name="postRequestUsingFile" duration-ms="1137" started-at="2022-05-18T16:09:23Z" finished-at="2022-05-18T16:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequestUsingFile -->
       </class> <!-- shettyAcademy.DeleteRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

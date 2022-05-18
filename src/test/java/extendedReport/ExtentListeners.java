@@ -5,19 +5,23 @@ import java.util.Date;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.Test;
+import com.CTS.StripeRestAssuredAPI.PayloadToCreatePostRequestWithFile;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+import io.restassured.response.Response;
+import utilityClass.HelperClass;
 
 public class ExtentListeners implements ITestListener {
 
-	static Date d = new Date();
-	static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
+	public static Date d = new Date();
+	public static String fileName = "Extent_" + d.toString().replace(":", "_").replace(" ", "_") + ".html";
 
-	private static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir")+"\\test-output\\"+fileName);
+	public static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir")+"\\test-output\\"+fileName);
 	
 	public static ThreadLocal<ExtentTest> testReport = new ThreadLocal<ExtentTest>();
 	
@@ -80,6 +84,32 @@ public class ExtentListeners implements ITestListener {
 			extent.flush();
 		}
 
+	}
+	
+	@Test
+	public void postRequestUsingFile() throws Exception{
+		
+		try {
+//			testReport.get().log(Status.INFO, "post request using payload from file is started");
+			String file = HelperClass.readDataFromPropertyFile().getJsonFile();
+			Response response = PayloadToCreatePostRequestWithFile.payloadToCreatePostRequestWithFile(
+					HelperClass.readDataFromPropertyFile().getKey(),
+					HelperClass.readDataFromPropertyFile().getContentType(), file,
+					HelperClass.readDataFromPropertyFile().getBaseURL(),
+					HelperClass.readDataFromPropertyFile().getBasePathForPost());
+//			System.out.println(result.getTestClass().getName());
+//			System.out.println(result.getMethod().getMethodName());
+			System.out.println(response.jsonPath().get("place_id"));
+			testReport.get().log(Status.PASS, "place is generated");
+//Testing report script is not working 
+			//Testing the webhook
+			
+		} catch (Exception e) {
+			System.out.println("Hello");
+			System.out.println(e.getMessage());
+			System.out.println(e.getCause());
+			System.out.println(e.getStackTrace().toString());
+		}
 	}
 
 }

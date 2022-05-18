@@ -1,6 +1,7 @@
 package shettyAcademy;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 
@@ -8,6 +9,8 @@ import extendedReport.ExtentListeners;
 import io.restassured.response.Response;
 import utilityClass.HelperClass;
 import utilityClass.JSONGetRequest;
+
+@Listeners(extendedReport.ExtentListeners.class)
 
 public class GetRequest extends ExtentListeners{
 

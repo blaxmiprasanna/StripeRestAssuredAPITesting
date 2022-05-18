@@ -1,19 +1,23 @@
 package shettyAcademy;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.CTS.StripeRestAssuredAPI.PayloadToCreatePostRequestWithFile;
 import com.aventstack.extentreports.Status;
+
 import extendedReport.ExtentListeners;
 import io.restassured.response.Response;
 import utilityClass.HelperClass;
 
-public class PostRequestUsingFile extends ExtentListeners{
+@Listeners(extendedReport.ExtentListeners.class)
+
+public class PostRequestUsingFile extends ExtentListeners {
 	
 	@Test
 	public void postRequestUsingFile() throws Exception{
 		
 		try {
-//			testReport.get().log(Status.INFO, "post request using payload from file is started");
+			testReport.get().log(Status.INFO, "post request using payload from file is started");
 			String file = HelperClass.readDataFromPropertyFile().getJsonFile();
 			Response response = PayloadToCreatePostRequestWithFile.payloadToCreatePostRequestWithFile(
 					HelperClass.readDataFromPropertyFile().getKey(),
